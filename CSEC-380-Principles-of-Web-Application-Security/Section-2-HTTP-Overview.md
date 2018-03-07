@@ -41,5 +41,14 @@
     - Zero Width
     - Spaces
     - RTL
-- 
-`
+- Normalization: multiple represetations for the same character
+
+### Canonical vs. Compatibility
+
+- Non-shortest form
+
+### Best Fit Mapping
+
+### Recap
+
+- Never put validation before transformation
