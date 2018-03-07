@@ -1,0 +1,3 @@
+# ourNotes
+
+True freedom.
