@@ -112,3 +112,7 @@
 - Find modular inverse: if p is a prime:
 a * a**(p - 2) = 1 (mod p)
 ==> a ** (-1) = a ** (p-2) (mod p) is the modular inverse mod p
+
+5. Euler's theorem
+
+- If n and a are coprime positive integers: a ** (phi(n)) = 1 (mod n)
