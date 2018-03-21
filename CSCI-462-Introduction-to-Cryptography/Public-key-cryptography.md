@@ -50,6 +50,30 @@
 
 2. Extended Euclidean Algorithm to find the modular inverse of r_1 mod r_0
 
+```python
+def eea(r0, r1):
+  s0 = 1
+  t0 = 0
+  s1 = 0
+  t1 = 1
+  i = 1
+  while True:
+      i = i + 1
+      ri = r0 % r1
+      qi = (r0 - ri) / r1
+      si = s0 - qi * s1
+      ti = t0 - qi * t1
+      print qi, ri, si, ti
+      if ri == 0:
+          break
+      r0 = r1
+      r1 = ri
+      s0 = s1
+      s1 = si
+      t0 = t1
+      t1 = ti
+```
+
 - Magic table of Z_4
 
   |x  |0  |1      |2  |3    |

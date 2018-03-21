@@ -17,3 +17,11 @@
   
 ## Filesystem Hierarchy Standard
 
+* Notes on the finals:
+  
+  - `stat` command
+  - `ls` command
+  - `chown`
+  - `chmod`
+  - Permission in Discretionary Access Control
+  - Questions related to output of `ls` command

@@ -53,9 +53,9 @@
 
 * 3 steps:
 
-  * 
-  * 
-  * 
+  * Transformation
+  * Exponentiation
+  * Inverse transformation
 
 * x_p => (x_p ** (d mod (p - 1))) mod p
 * x_q => (x_q ** (d mod (q - 1))) mod q
@@ -84,7 +84,7 @@
       29 ** (-1) mod 31 = 15s
     * Result: y = [(q * c_p) * y_p + (p * c_q) * y_q] mod n                                   * The primes p and q are not frequently changed
 
-## Complexity or CRT
+## Complexity of CRT
 
 ## Finding large primes
 
@@ -107,4 +107,70 @@
   ```
   * `a` is a Fermat witness <= p' is composite
   * `a`is a Fermat liar <= False result
+
+#### Miller-Rabin's test
+
+  * Given the decomposition of an odd prime candidate p':
+    `p' - 1 = (2 ** u) * r`
+    where r is odd
+  * If we can find an integer `a` such that:
+    `a**r != 1 mod p'`
+  * and `a**` //TODO
+
+## Attacks on RSA
+
+### Secure RSA
+
+1. Don't use primes too close to each other
+2. the public exponent `e` is usually small for fast public operation. Make sure m ** e is greater than n so that `D(m**e) != m ** (1/e)`
+3. Don't send the same message M with different public key with the same publick exponent `e`.
+  
+    - <code>C<sub>1</sub> = M<sup>3</sup>(mod n<sub>1</sub>)
+    - <code>C<sub>2</sub> = M<sup>3</sup>(mod n<sub>2</sub>)
+    - <code>C<sub>3</sub> = M<sup>3</sup>(mod n<sub>3</sub>)
+
+    Using CRT we can solve for `M**3` and to obtain M, calculate `(M**3)**(1/3)`
+4. Homomorphic property of RSA
+    
+    - Sign M_1: s_1 = M_1 ** d (mod n)
+    - Sign M_2: s_2 = M_2 ** d (mod n)
+    - If there is a M_3 = M_1 * M_2, the signature is s_1 * s_2 (mod n). This can be calculated without using the private key
+
+5. Shared factor attack
+
+### Math attacks on RSA
+
+#### Factoring problem
+
+- Factoring n. This enables the calculation of the private key.
+- General number field sieve (GNFS): Most efficient classical algorithm for factoring integers larger than 10<sup>100</sup>
+- Special number field sieve (SNFS)
+
+### Others
+
+- Chosen ciphertext
+- Hardware fault-based
+- Bruteforce
+- Math
+- Timing attack
+
+### Optimal Asymmetricc encryption padding (OAEP)
+
+### Diffie-Hellman Key Exchange
+
+### Setup
+
+1. Choose large prime q
+2. Chose an integer alpha in range [2, q - 2] such that alpha is a primitive root of q
+3. Publish q and alpha
+
+* Primitive root: alpha is a primitive root modulo q if for every integer a coprime to p, there is an integer k such that alpha<sup>k</sup> = a (mod q)
+
+### Key Exchange
+
+1. Generate a private key X_A, X_B
+2. Public key: Y_A = alpha ** X_A (mod q), Y_B = alpha ** X_B (mod q)
+3. Shared secret. Y_A ** X_B (mod q) == Y_B ** X_A (mod q)
+
+### The Discrete Log problem
 
