@@ -154,9 +154,9 @@
 - Math
 - Timing attack
 
-### Optimal Asymmetricc encryption padding (OAEP)
+## Optimal Asymmetric encryption padding (OAEP)
 
-### Diffie-Hellman Key Exchange
+## Diffie-Hellman Key Exchange
 
 ### Setup
 
@@ -172,5 +172,28 @@
 2. Public key: Y_A = alpha ** X_A (mod q), Y_B = alpha ** X_B (mod q)
 3. Shared secret. Y_A ** X_B (mod q) == Y_B ** X_A (mod q)
 
-### The Discrete Log problem
+## The Discrete Log problem
+
+## MITM attack
+
+### A generator of the group Z(*, pp)
+
+* Primitive root: alpha is a primitive root modulo q if for every integer a coprime to p, there is an integer k such that alpha<sup>k</sup> = a (mod q)
+* alpha is a generator of the multiplicative group of integers modulo Z(*. p)
+
+### Subgroup of the group Z(*, p)
+
+* Example: subgroups of Z(*, 7)
+
+    * ({1}, .) order 1
+    * ({1, 6}, .) order 2
+    * ({1, 2, 4} .) order 3
+    * Z(*, 7) order 6
+
+### Prevention
+
+* Digital signature
+* Safe domain parameters:
+
+## El Gamal encryption
 
