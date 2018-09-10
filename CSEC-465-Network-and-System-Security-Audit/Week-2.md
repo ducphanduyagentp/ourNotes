@@ -36,6 +36,26 @@
         - Follow industry expectations?
         - Clear?
 - Policy/Procedure Compliance
+    - Are they being followed?
+    - Employee behaviors
+    - System configurations
+
+## Important steps
+
+- Pre-engagement discussion
+    - Way before the audit
+    - To discuss types, goals, duration, scope (like Rules of Engagement), depth
+    - statements of work, NDAs, contracts
+    - Scope:
+        - Exceeded authorization
+        - (Usually) Scope out: known vulns, production servers, physical damages.
+- Initial audit meeting
+    - Stakeholders
+    - Onsite
+- Audit
+- Audit report
+    - Quantifiable metrics
+    - Realistic recommendations and timelines
 
 ## Lab 1
 
