@@ -98,7 +98,7 @@ There are points of exposure that allow these attack vectors to take place.
 
 ## Security Controls and Risk
 
-- Risk(Event, Asset) = P(Event) * Cost(A)
+- Risk(Event, Asset) = P(Event) * Cost(A) (Cost not just for the technical but for resolving it)
 - Security controls => reduce / elimiate risks
 - Risk management: Develop policies to reduce, eliminate, transfer, accept risks
 
