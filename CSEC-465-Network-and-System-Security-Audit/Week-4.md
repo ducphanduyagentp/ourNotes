@@ -84,11 +84,38 @@
         - Statement of purpose: pretty much like the policies
         - Elements:
             - Security relative to policies
-            - 
+                - People need to understand it.
+            - Content of Policies:
+                - What is admin credentials?
+        - Justification
+            - Why need these policies?
+            - Non-technical
+        - Identify responsibilities and roles
+            - 1 group of Stakeholders
+            - Not the only group who enforcing these policies
+            - Who impacted, affected, enforce?
+        - Strategic goals
 - Issues-specific
+    - Detailed, specific guidance
+        - How to encrypt data? What software? What algorithm?
+    - Directive control, telling people to do something
+    - Justification
+        - Why use this but not that? Both technical and high-level explanation
+    - Often protects the organization from **liability**
+        - Documenting the investigation processes
+    - Typically not technical enforced
+    - Elaborate on EISP
 - System-specific
-
-### Life-cycle
+    - Highly technical
+    - Implementations
+        - ACL
+            - Harder if there is overlapping groups of users
+            - Prevent potential conflicts of interests
+        - Configuration rules
+    - Talk about specific technology, really technical.
+    - Where on the system?
+        - Example: MySQL
+            - MySQL ==> SELinux ==> fp
 
 ## Lab 2
 
