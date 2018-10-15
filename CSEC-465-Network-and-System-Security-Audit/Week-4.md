@@ -117,11 +117,26 @@
         - Example: MySQL
             - MySQL ==> SELinux ==> fp
 
+## Discussion
+- Strategy for fixing old af vulns
+    - Fix => ++ profit
+    - Fix => -- risk
+        - Law suit
+        - Cost of IR
+        - -- credibility
+        - Tools available, PoC
+- Process
+    - Identify the problem
+    - Identify the cause of the problem
+    - Make a policy to fix the problem
+    - Fix the problem
+    - Audit to make sure the problem is fixed
+
 ## Lab 2
 
 - Stakeholders: Identify stakeholders in particular parts
 - Policy Statement: **very high level** policy statements
-- Auditing: Plan auditing based on the written policy: who will audit this policy
+- Auditing: Plan auditing based on the written policy: who will audit **this policy**
 - Maintenance process: who update it
 - Amount: each group member => 6 policies
 - Network is the same as lab 1
