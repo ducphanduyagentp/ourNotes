@@ -25,9 +25,9 @@
 - Repeatable: needs to compare audit results at 2 different times.
 - Methodical examination and review of measuring something against a standard
 - Metrics:
-    - \# Physical Attack surfaces
-    - \# Security exploitability: CVSS score
-    - \# Administrative control: \# people do/don't security training, \# admins in the infrastructure
+    - \# of Physical Attack surfaces
+    - \# of Security exploitability: CVSS score
+    - \# of Administrative control: \# of people do/don't security training, \# of admins in the infrastructure
 - Example:
     - Conformance
     - Security

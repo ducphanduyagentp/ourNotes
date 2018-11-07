@@ -5,10 +5,10 @@
 - Threat: a bad event that may happen
 - Risk: Damage x Probability, measurement of the impact of a threat
 - Threat Actor: individual or group that carry out the threat
-- Weakness: 
-- Flaw
-- Bug
-- Vuln
+- Weakness: Deficiency
+- Flaw: Design weakness
+- Bug: implementation weakness
+- Vuln: bug/flaw
 - Exploit
 
 - Auditing: process of verifying that a set of standards is followed
