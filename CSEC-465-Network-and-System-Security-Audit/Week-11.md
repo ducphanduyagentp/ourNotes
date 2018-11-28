@@ -15,6 +15,12 @@
 
 ## Linux
 
+- Windows vs. Linux
+    - Linux: Varied/Granular network services
+    - Windows: More predictable
+- SSH configs
+- 
+
 ## Midterm
 
 - Q4: Risk formula, why it's used: matrix vs formula, difficult to determine the exact number for the formula.
