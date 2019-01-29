@@ -12,3 +12,14 @@
     - Anarchy: Everyone is a trust anchor
         - Example: GPG
         - Users make decisions
+- Objects of trust
+    - Theoretical: crypto algos
+    - Design and architectures
+    - Implementations: Software/System
+- Trust but verify
+    - Theoretical, algorithms: Verified through formal proofs
+    - Design and architecture: audit
+    - Implementation: testing and auditing
+- Measure of effectiveness/performance
+- Trusted Computing Base
+- TCSEC - Orange book
