@@ -32,3 +32,9 @@
 - Authenticate
 - Analyze
 - Present
+
+### Authenticate the Evidence
+
+- Preserved in original state
+- Authentic and unaltered
+- Cryptographic hash: 3 properties
