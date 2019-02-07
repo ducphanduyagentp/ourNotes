@@ -64,8 +64,60 @@
     - 7 levels
 - Where to trust
     - TCSEC
-- Security and Integrity Models
-    - Non-interference model: Clark-wilson
-    - Bell-LaPadula:
-        - No read up: S reads O iff L(O) <= L(S)
-        - No write down: S writes O iff L(S) <= L(O)
+
+## Security and Integrity Models
+
+- Non-interference model: Clark-wilson
+- Bell-LaPadula (BLP):
+    - No read up: S reads O iff L(O) <= L(S)
+    - No write down: S writes O iff L(S) <= L(O)
+    - Simple Security Condition
+    - *-Property
+    - All about confidentiality: Can get information anywhere to include in classified work
+- Biba:
+    - About Integrity
+    - preventing unauthorized writing
+    - inverse of BLP
+    - Integrity(O) = min(Integrity(O_i))
+    - If there is at least 1 thing included but untrusted, the whole this is untrusted
+    - No read down: S reads O iff I(O) >= I(S)
+    - No write up: S writes O iff I(O) <= I(S)
+- Clark-wilson
+    - Developed after Biba
+    - Components:
+        - Subjects
+        - Transactions
+    - Data items:
+        - Constrained: through integrity verification procedure
+        - Unconstrained: no IVP
+    - Transactions are predefined sequences of operations on data items
+    - 9 rules of 2 types:
+        - Certification rules
+        - Enforcement rules
+- Graham-Denning
+- Harrison-Ruzzo-Ullman
+    - Extend Graham-Denning
+    - Add more rules to a protection system
+    - Still a finite set of commands
+
+## Multilateral Security (MLS)
+
+- Need-to-know
+- Compartments associated with each piece of details
+
+## Aside on US Data Classification
+
+## Chinese Wall Security Policy
+
+- DFC. Brewer and MJ. Nash
+- Conflict of Interest
+
+## Formal modeling
+
+- About relational logic, mathematical model
+- BLP:
+    - Subject(X)
+    - Object(X)
+    - L(X) = classification level of X
+    - has(x, y, z) = X has permission Y on object Z
+    - for all s, o
