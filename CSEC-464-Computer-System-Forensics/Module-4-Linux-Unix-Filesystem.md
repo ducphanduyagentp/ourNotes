@@ -10,4 +10,4 @@
 
 ## Disk structure
 
-- 
+- View superblock
