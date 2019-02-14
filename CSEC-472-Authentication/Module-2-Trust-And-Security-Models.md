@@ -121,3 +121,19 @@
     - L(X) = classification level of X
     - has(x, y, z) = X has permission Y on object Z
     - for all s, o
+
+## Quiz review
+
+- Removing essential characteristic: abstraction
+- Hash representation
+- Key clustering
+- Keyed-hashing
+- X.509 certificate for mutual authentication
+- NEAT
+    - Evaluable: no hidden stuff, provable to be secure before it's deployed, and while it's deployed we can make sure that it's working right.
+- Models
+    - *-Property
+    - Simple properties
+- EAL: measure assurance
+- Multi Independent Level of Security
+- TCSec measures security in opposed to EAL
