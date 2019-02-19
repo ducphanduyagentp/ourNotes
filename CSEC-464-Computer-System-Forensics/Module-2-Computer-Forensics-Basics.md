@@ -1,4 +1,4 @@
-# Computer Forensics
+# Computer Forensics Basics
 
 - What's that?
     - Gathering and analyzing data
